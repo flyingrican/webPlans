@@ -1,0 +1,45 @@
+<template name="addplan">
+	<h1>Add Plan</h1>
+	<form class="add-plan-form">
+		<div class="row">
+			<div class="twelve columns">
+				<label for="plan_name">Plan Name</label>
+				<input class="u-full-width" type="text" name="plan_name" id="plan_name" placeholder="Plan Name (All lowercase)">
+			</div>
+		</div>
+		<div class="row">
+			<div class="twelve columns">
+				<label for="plan_label">Plan Label</label>
+				<input class="u-full-width" type="text" name="plan_label" id="plan_label" placeholder="Plan Label (All lowercase)">
+			</div>
+		</div>
+		<div class="row">
+			<div class="twelve columns">
+				<label for="days">Days (Duration)</label>
+				<input class="u-full-width" type="text" name="days" id="days" placeholder="Days">
+			</div>
+		</div>
+		<div class="row">
+			<div class="twelve columns">
+				<label for="price">Price</label>
+				<input class="u-full-width" type="text" name="price" id="price" value="$ " placeholder="Price">
+			</div>
+		</div>
+		<div class="row">
+			<div class="twelve columns">
+				<label for="description">Description</label>
+				<textarea class="u-full-width" type="text" name="description" id="description"></textarea> 
+			</div>
+		</div>
+		<div class="row">
+			<div class="twelve columns">
+				<label for="default">Default Plan</label>
+				<select name="is_default" id="is_default" class="u-full-width">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</select>
+			</div>
+		</div>
+		<input type="submit" class="button button-primary" value="Add Plan">
+	</form>
+</template>
